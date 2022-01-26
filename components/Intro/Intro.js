@@ -10,7 +10,7 @@ const Intro = () => {
       <div className={style.grain} />
       <div className={style.center}>
         <div>
-          <Image src='/images/logo-lj.png' alt='LJ logo' id={style.logoImage} width={100} height={100} />
+          <Image src={logoLJ} alt='LJ logo' id={style.logoImage} width={100} height={100} placeholder='blur' />
           <header id='name-header'>
             LACHLAN <strong>JADEZAK</strong>
           </header>
