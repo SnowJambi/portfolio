@@ -1,31 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 @font-face {
-  font-family: Metropolis;
-  src: url('/fonts/Metropolis-Black.woff');
-  font-weight: bold;
   font-display: swap;
+  font-family: Metropolis;
+  font-weight: bold;
+  src: url('/fonts/Metropolis-Black.woff');
 }
 
 @font-face {
-  font-family: Metropolis;
-  src: url('/fonts/Metropolis-thin.woff');
-  font-weight: normal;
   font-display: swap;
+  font-family: Metropolis;
+  font-weight: normal;
+  src: url('/fonts/Metropolis-thin.woff');
 }
 
 // Global and extendable classes
-
-html {
-  scroll-behavior: smooth;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-body {
+.container {
   background: #141821 linear-gradient(to right, #141821, #0d1115);
   margin: 40px 40px 0;
+  max-width: 100%;
+  overflow-x: hidden;
   scroll-behavior: smooth;
+
+  h1 {
+    color: #12161f;
+    font-family: Metropolis, Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+    font-weight: normal;
+    margin: 0 0 80px;
+    text-align: center;
+
+    &::after {
+      animation: blink 1s steps(1, start) infinite;
+      background: #12161f;
+      content: '';
+      display: inline-block;
+      height: 50px;
+      margin-bottom: -5px;
+      margin-left: 7px;
+      opacity: 0;
+      width: 3px;
+    }
+  }
 }
 
 .full-container {
@@ -79,27 +95,6 @@ body {
   50% { background-position: (-20px 50px); }
   70% { background-position: (30px 100px); }
   90% { background-position: (-100px 2px); }
-}
-
-h1 {
-  color: #12161f;
-  font-family: Metropolis, Montserrat, Arial, Helvetica, sans-serif;
-  font-size: 4rem;
-  font-weight: normal;
-  margin: 0 0 80px;
-  text-align: center;
-}
-
-h1::after {
-  animation: blink 1s steps(1, start) infinite;
-  background: #12161f;
-  content: '';
-  display: inline-block;
-  height: 50px;
-  margin-bottom: -5px;
-  margin-left: 7px;
-  opacity: 0;
-  width: 3px;
 }
 
 @keyframes blink {
@@ -560,8 +555,8 @@ a.button-wrapper {
 
 @keyframes fade-move-down {
   0% {
-    transform: translate(0, -10px) rotate(45deg);
     opacity: 0;
+    transform: translate(0, -10px) rotate(45deg);
   }
 
   50% {
@@ -569,20 +564,20 @@ a.button-wrapper {
   }
 
   100% {
-    transform: translate(0, 10px) rotate(45deg);
     opacity: 0;
+    transform: translate(0, 10px) rotate(45deg);
   }
 }
 
 @keyframes fade-move-down2 {
   0% {
-    transform: translate(0, 10px) rotate(45deg);
     opacity: 0;
+    transform: translate(0, 10px) rotate(45deg);
   }
 
   15% {
-    transform: translate(0, -10px) rotate(45deg);
     opacity: 0;
+    transform: translate(0, -10px) rotate(45deg);
   }
 
   50% {
@@ -590,8 +585,8 @@ a.button-wrapper {
   }
 
   100% {
-    transform: translate(0, 12px) rotate(45deg);
     opacity: 0;
+    transform: translate(0, 12px) rotate(45deg);
   }
 }
 
