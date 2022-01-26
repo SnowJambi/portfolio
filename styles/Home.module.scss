@@ -123,12 +123,7 @@ $grad-bg: #141821 linear-gradient(to right, #141821, #0d1115);
   }
 }
 
-.full-container {
-  position: relative;
-  z-index: 5;
-}
-
-.fixed-border-top {
+.fixedBorderTop {
   background: $grad-bg;
   height: 40px;
   position: fixed;
@@ -137,13 +132,63 @@ $grad-bg: #141821 linear-gradient(to right, #141821, #0d1115);
   z-index: 99;
 }
 
-.fixed-border-bottom {
+.fixedBorderBottom {
   background: $grad-bg;
   bottom: 0;
   height: 40px;
   position: fixed;
   width: 100%;
   z-index: 99;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+// Intro section
+.fullContainer {
+  position: relative;
+  z-index: 5;
+}
+
+.vpFixed {
+  height: 100vh;
+  overflow: hidden;
+  position: sticky;
+  top: 40px;
+  z-index: 1;
+}
+
+.center {
+  align-items: center;
+  display: flex;
+  height: 90%;
+  justify-content: center;
+}
+
+#logoImage {
+  display: block;
+  height: 100px;
+  margin: auto;
+  padding-bottom: 25px;
+  width: 100px;
+}
+
+#name-header {
+  background: $grad-blue;
+  background-clip: text;
+  color: $grey;
+  font-family: Metropolis, Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 4px;
+  text-align: center;
+  -webkit-text-fill-color: transparent;
 }
 
 .grain {
@@ -167,57 +212,6 @@ $grad-bg: #141821 linear-gradient(to right, #141821, #0d1115);
   50% { background-position: (-20px 50px); }
   70% { background-position: (30px 100px); }
   90% { background-position: (-100px 2px); }
-}
-
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-// Header section
-.vp-size-div {
-  height: 100vh;
-  overflow: hidden;
-  position: relative;
-}
-
-.vp-size-div-fixed {
-  height: 100vh;
-  overflow: hidden;
-  position: sticky;
-  top: 40px;
-  z-index: 1;
-}
-
-.center {
-  align-items: center;
-  display: flex;
-  height: 90%;
-  justify-content: center;
-}
-
-#logo-image {
-  display: block;
-  height: 100px;
-  margin: auto;
-  padding-bottom: 25px;
-  width: 100px;
-}
-
-#name-header {
-  background: $grad-blue;
-  background-clip: text;
-  color: $grey;
-  font-family: Metropolis, Montserrat, Arial, Helvetica, sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 4px;
-  text-align: center;
-  -webkit-text-fill-color: transparent;
 }
 
 // Gradients

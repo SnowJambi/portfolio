@@ -36,6 +36,7 @@
     "no-descending-specificity": null,
     "order/properties-alphabetical-order": true,
     "selector-max-type": [0, {"ignore": ["child", "compounded", "descendant", "next-sibling"]}],
-    "selector-class-pattern": "^[a-z][a-zA-Z0-9]+$"
+    "selector-class-pattern": "^[a-z][a-zA-Z0-9]+$",
+    "selector-id-pattern": "^[a-z][a-zA-Z0-9]+$"
   }
 }
