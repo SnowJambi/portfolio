@@ -42,6 +42,57 @@
       width: 3px;
     }
   }
+
+  h2 {
+    font-family: Metropolis, Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  p,
+  a {
+    color: #fff;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 10px;
+  }
+
+  a {
+    text-decoration: unset;
+  }
+
+  i {
+    background: linear-gradient(130deg, #c8f844, #85a928);
+    background-clip: text;
+    color: #bbb;
+    font-size: 120px;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @media (max-width: 800px) {
+    .profile-picture {
+      width: 60%;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    #about {
+      padding: 10% 7.5%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    p {
+      font-size: 0.9rem;
+    }
+  }
 }
 
 .full-container {
@@ -107,35 +158,7 @@
   }
 }
 
-h2 {
-  font-family: Metropolis, Montserrat, Arial, Helvetica, sans-serif;
-  font-size: 3rem;
-  text-align: center;
-}
-
-p,
-a {
-  color: #fff;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.5;
-  margin: 10px;
-}
-
-a {
-  text-decoration: unset;
-}
-
-i {
-  background: linear-gradient(130deg, #c8f844, #85a928);
-  background-clip: text;
-  color: #bbb;
-  font-size: 120px;
-  -webkit-text-fill-color: transparent;
-}
-
 // Header section
-
 .vp-size-div {
   height: 100vh;
   overflow: hidden;
@@ -318,30 +341,6 @@ a.button-wrapper {
     display: block;
     float: unset;
     margin: 0 auto 30px;
-  }
-}
-
-@media (max-width: 800px) {
-  .profile-picture {
-    width: 60%;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-
-  #about {
-    padding: 10% 7.5%;
-  }
-}
-
-@media (max-width: 500px) {
-  p {
-    font-size: 0.9rem;
   }
 }
 

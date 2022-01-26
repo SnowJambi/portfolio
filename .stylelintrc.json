@@ -1,5 +1,5 @@
 {
-  "extends": "stylelint-config-standard-scss",
+  "extends": ["stylelint-config-standard-scss"],
   "plugins": ["stylelint-order"],
   "rules": {
     "indentation": 2,
@@ -34,6 +34,7 @@
     "media-feature-colon-space-before": "never",
     "media-feature-colon-space-after": "always",
     "no-descending-specificity": null,
-    "order/properties-alphabetical-order": true
+    "order/properties-alphabetical-order": true,
+    "selector-max-type": [0, {"ignore": ["child", "compounded", "descendant", "next-sibling"]}]
   }
 }
