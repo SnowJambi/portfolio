@@ -11,10 +11,12 @@ export default function Home() {
         <meta name='description' content='Junior web developer based in Canberra, Australia.' key='description' />
         <Favicons />
       </Head>
-      <div className={styles.container}>
-        <main className={styles.main}>
-          <h1 className={styles.title}>Hello World!</h1>
-        </main>
+      <div className={styles.containerOuter}>
+        <div className={styles.containerInner}>
+          <main className={styles.main}>
+            <h1 className={styles.title}>Hello World!</h1>
+          </main>
+        </div>
       </div>
     </>
   )
