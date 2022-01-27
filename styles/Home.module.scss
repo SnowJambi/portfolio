@@ -55,7 +55,7 @@ $grad-bg: #141821 linear-gradient(to right, #141821, #0d1115);
 }
 
 // Samsungs attempted "Dark mode" is awful
-@media (prefers-color-scheme: dark) or (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark), (prefers-color-scheme: light) {
   // Global selectors and reused elements
   .containerOuter {
     background: $grad-bg;
