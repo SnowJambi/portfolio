@@ -97,8 +97,8 @@ export default function Home() {
                   <p>React</p>
                 </div>
                 <div className={style.tech}>
-                  <i className='devicon-gatsby-plain' />
-                  <p>Gatsby</p>
+                  <i className="devicon-nextjs-original-wordmark" />
+                  <p>Next.js</p>
                 </div>
                 <div className={style.tech}>
                   <i className='devicon-git-plain' />
