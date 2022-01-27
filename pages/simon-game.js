@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Favicons from '../components/Favicons/Favicons'
+import Script from 'next/script'
 
 const SimonGame = () => {
   return (
@@ -25,8 +26,8 @@ const SimonGame = () => {
         </div>
       </div>
 
-      <script src='https://code.jquery.com/jquery-3.4.1.min.js' />
-      <script src='/scripts/simon-game.js' />
+      <Script src='https://code.jquery.com/jquery-3.4.1.min.js' strategy='beforeInteractive'/>
+      <Script src='/scripts/simon-game.js' strategy='beforeInteractive'/>
     </>
   )
 }

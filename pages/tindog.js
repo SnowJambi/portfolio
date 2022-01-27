@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Script from 'next/script'
 
 const Tindog = () => {
   return (
@@ -14,19 +15,26 @@ const Tindog = () => {
           crossOrigin='anonymous'
         />
         <link rel='stylesheet' href='/styles/tindog.css' />
-        <script src='https://code.jquery.com/jquery-3.4.1.slim.min.js' integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n' crossOrigin='anonymous' />
-        <script
+        <Script
+          src='https://code.jquery.com/jquery-3.4.1.slim.min.js'
+          integrity='sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n'
+          crossOrigin='anonymous'
+          strategy='beforeInteractive'
+        />
+        <Script
           src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'
           integrity='sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo'
           crossOrigin='anonymous'
+          strategy='beforeInteractive'
         />
-        <script
+        <Script
           src='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'
           integrity='sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6'
           crossOrigin='anonymous'
+          strategy='beforeInteractive'
         />
 
-        <script src='https://kit.fontawesome.com/caf8b7f6c2.js' crossOrigin='anonymous' />
+        <Script src='https://kit.fontawesome.com/caf8b7f6c2.js' crossOrigin='anonymous' strategy='beforeInteractive' />
       </Head>
       <section id='title'>
         <div className='container-fluid title-cont'>
@@ -63,8 +71,8 @@ const Tindog = () => {
                 Download
               </button>
             </div>
-            <div className='col-lg-6'>
-              <img className='img-fluid phone-img d-block' src='/images/tindog/iphone6.png' alt='iphone-mockup' />
+            <div className='col-lg-6' style={{display: 'flex'}}>
+              <img className='phone-img' src='/images/tindog/iphone6.png' alt='iphone-mockup' />
             </div>
           </div>
         </div>
