@@ -8,7 +8,7 @@ const Intro = () => {
     <div className={style.intro}>
       <header>
         <div style={{ margin: 'auto' }}>
-          <Image src='/images/logo-lj.png' alt='LJ logo' height={100} width={100} />
+          <Image src='/images/logo-lj.png' alt='LJ logo' height={100} width={100} priority={true}/>
           <h1>
             LACHLAN <b>JADEZAK</b>
           </h1>
