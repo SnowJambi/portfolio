@@ -31,7 +31,6 @@ body,
 body {
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
-  scroll-behavior: smooth;
 }
 
 /*
@@ -86,4 +85,8 @@ h6 {
 
 body {
   font-size: 1.6rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
