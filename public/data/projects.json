@@ -29,15 +29,6 @@
     },
     {
       "image": {
-        "path": "/images/tindog.png",
-        "alt": "Tindog project preview"
-      },
-      "title": "Tindog",
-      "body": "A mockup of tinder for dogs.",
-      "url": "/tindog"
-    },
-    {
-      "image": {
         "path": "/images/fem-fylo.png",
         "alt": "Fylo landing page project preview"
       },

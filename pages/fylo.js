@@ -7,7 +7,6 @@ const Fylo = () => {
       <Head>
         <link rel='icon' type='image/png' sizes='32x32' href='./images/favicon-32x32.png' />
         <link href='https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&display=swap' rel='stylesheet' />
-        <script src='https://kit.fontawesome.com/caf8b7f6c2.js' crossOrigin='anonymous' />
         <link rel='stylesheet' href='styles/fylo.css' />
 
         <title>Frontend Mentor | Fylo landing page with two column layout</title>
